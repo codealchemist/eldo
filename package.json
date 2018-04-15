@@ -1,6 +1,6 @@
 {
   "name": "eldo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tiny chainable DOM manipulation lib.",
   "main": "index.js",
   "scripts": {
