@@ -161,7 +161,7 @@ class El {
     return this
   }
 
-  static injectStyles (styles){
+  static injectStyles (styles) {
     const style = document.createElement('style')
     style.type = 'text/css'
     style.innerHTML = styles
@@ -169,3 +169,5 @@ class El {
     document.getElementsByTagName('head')[0].appendChild(style)
   }
 }
+
+module.exports = El
