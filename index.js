@@ -75,6 +75,11 @@ class El {
     return this
   }
 
+  disappear () {
+    this.style('opacity', 0)
+    return this
+  }
+
   focus () {
     this.$el.focus()
     return this

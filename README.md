@@ -56,6 +56,7 @@ $title
 - `remove()`
 - `setRandomBackground({path = '', range = [0, 5], length = 3, ext = 'jpg'})`
 - `appear()`
+- `disappear()`
 - `focus()`
 - `html(value)`
 - `appendHtml(value)`
@@ -201,6 +202,12 @@ $myEl.setRandomBackground({
 `$myEl.appear()`
 
 Sets `opacity` to `1`.
+
+### Disappear element
+
+`$myEl.disappear()`
+
+Sets `opacity` to `0`.
 
 ### Focus element
 
