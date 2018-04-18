@@ -147,6 +147,24 @@ Returns requested style value.
 
 Sets passed style attribute with passed value.
 
+### Get attribute
+
+`$myEl.attr('data-id')`
+
+Returns value for attribute `data-id`.
+
+### Set attribute
+
+`$myEl.attr('data-id', 42)`
+
+Sets attribute `data-id` to `42`.
+
+### Remove attribute
+
+`$myEl.attr('data-id', false)`
+
+Removes attribute `data-id` from element.
+
 ### Add class to element
 
 `$myEl.addClass('active')`
