@@ -59,7 +59,8 @@ class El {
     }
 
     if (value === false) {
-      return this.$el.removeAttribute(attrName)
+      this.$el.removeAttribute(attrName)
+      return this
     }
 
     this.$el.setAttribute(attrName, value)
