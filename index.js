@@ -41,6 +41,14 @@ class El {
   }
 
   style (styleName, value) {
+    if (styleName === undefined) {
+      return this.$el.style
+    }
+
+    if (value === undefined) {
+      return this.$el.style[styleName]
+    }
+
     this.$el.style[styleName] = value
     return this
   }

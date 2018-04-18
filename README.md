@@ -40,7 +40,7 @@ $title
   .show()
 ```
 
-## API 
+## API
 
 - `constructor(element)`
 - `exists()`
@@ -74,7 +74,7 @@ $title
 
 ### Create new instance
 
-`constructor (element)` 
+`constructor (element)`
 
 Where `element` can be any valid CSS selector or a reference to an element.
 
@@ -123,13 +123,25 @@ Hides an element using `display: none`.
 
 Sets `disabled` attribute to `true`.
 
-### Enable element 
+### Enable element
 
 `$myEl.disable()`
 
 Sets `disabled` attribute to `false`.
 
-### Set styles on element
+### Get all styles on element
+
+`$myEl.style()`
+
+Returns styles object containing all styles set on element.
+
+### Get specific style on element
+
+`$myEl.style('color')`
+
+Returns requested style value.
+
+### Set style on element
 
 `$myEl.style('color', 'black')`
 
@@ -175,7 +187,7 @@ Default values:
 - range: `[0, 5]`
 - length: `3`
 - ext: `jpg`
- 
+
 If we have the following files:
 
 ```
@@ -321,4 +333,3 @@ El.injectStyles(`
   }
 `)
 ```
-
