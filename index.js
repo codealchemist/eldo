@@ -53,6 +53,15 @@ class El {
     return this
   }
 
+  attr (attrName, value) {
+    if (value === undefined) {
+      return this.$el.getAttribute(attrName)
+    }
+
+    this.$el.setAttribute(attrName, value)
+    return this
+  }
+
   addClass (className) {
     this.$el.className += ` ${className}`
     return this
